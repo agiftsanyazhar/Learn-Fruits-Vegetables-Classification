@@ -48,10 +48,10 @@ data_cat = [
 img_height = 180
 img_width = 180
 
-image = "apple.jpg"
+image = "paprika.jpg"
 
 image_load = tf.keras.utils.load_img(image, target_size=(img_height, img_width))
-img_arr = tf.keras.utils.array_to_img(image_load)
+img_arr = tf.keras.utils.img_to_array(image_load)
 img_batch = tf.expand_dims(img_arr, 0)
 
 predict = model.predict(img_batch)
