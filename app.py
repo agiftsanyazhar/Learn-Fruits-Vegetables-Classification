@@ -48,7 +48,7 @@ data_cat = [
 img_height = 180
 img_width = 180
 
-image = "paprika.jpg"
+image = "apple.jpg"
 
 image_load = tf.keras.utils.load_img(image, target_size=(img_height, img_width))
 img_arr = tf.keras.utils.array_to_img(image_load)
