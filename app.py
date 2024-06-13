@@ -74,7 +74,7 @@ if uploaded_file is not None:
 
     st.write(
         "Fruit/Vegetable in image is **{}** with an accuracy of **{:.2f}%**".format(
-            data_cat[np.argmax(score)].capitalize(), np.max(score) * 100
+            data_cat[np.argmax(score)].upper(), np.max(score) * 100
         )
     )
 else:
